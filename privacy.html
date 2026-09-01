@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー - Dosely</title>
+<meta name="description" content="Doselyのプライバシーポリシー。取得する情報、保存先、HealthKitの取り扱い、第三者提供の有無について記載しています。">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">本文へ移動</a>
+
+<header class="site-header">
+  <a class="wordmark" href="/dosely/">Dosely</a>
+  <nav class="site-nav" aria-label="サイト内ナビゲーション">
+    <a href="privacy.html" aria-current="page">プライバシーポリシー</a>
+    <a href="terms.html">利用規約</a>
+    <a href="tokushoho.html">特定商取引法に基づく表記</a>
+    <a href="support.html">お問い合わせ</a>
+  </nav>
+</header>
+
+<main id="main">
+<div class="doc-shell">
+  <nav class="doc-toc" aria-label="目次">
+    <p class="toc-label">目次</p>
+    <ol>
+      <li><a href="#intro">1. はじめに</a></li>
+      <li><a href="#not-medical-device">2. 本アプリの位置づけ</a></li>
+      <li><a href="#data-collected">3. 取得する情報</a></li>
+      <li><a href="#storage">4. 保存先と管理方法</a></li>
+      <li><a href="#healthkit">5. ヘルスケアデータの取り扱い</a></li>
+      <li><a href="#server">6. サーバーへの送信について</a></li>
+      <li><a href="#analytics">7. 分析データについて</a></li>
+      <li><a href="#billing">8. 課金情報の取り扱い</a></li>
+      <li><a href="#third-party">9. 第三者提供</a></li>
+      <li><a href="#tracking">10. Cookie等のトラッキング</a></li>
+      <li><a href="#children">11. お子様の利用について</a></li>
+      <li><a href="#deletion">12. データの削除</a></li>
+      <li><a href="#requests">13. 開示・訂正・利用停止の請求</a></li>
+      <li><a href="#changes">14. ポリシーの変更</a></li>
+      <li><a href="#contact">15. お問い合わせ</a></li>
+    </ol>
+  </nav>
+
+  <article class="doc-body">
+    <div class="doc-header">
+      <h1>プライバシーポリシー</h1>
+      <p class="doc-meta">制定日: 2026年9月1日 / 最終改定日: 2026年9月1日</p>
+    </div>
+
+    <section id="intro">
+      <h2>1. はじめに</h2>
+      <p>
+        本ポリシーは、Dosely（以下「本アプリ」といいます）における利用者情報の取り扱いについて定めるものです。
+        本アプリは、医師から処方されたGLP-1受容体作動薬などの治療を記録・可視化することで、治療の継続を
+        支援するための個人用ツールです。本ポリシーをよくお読みいただいたうえで、本アプリをご利用ください。
+      </p>
+    </section>
+
+    <section id="not-medical-device">
+      <h2>2. 本アプリの位置づけ</h2>
+      <div class="note caution">
+        <strong>本アプリは医療機器ではありません。</strong>診断・治療・用量の判断は一切行いません。
+        表示される薬剤情報は公的な添付文書に基づく参考情報であり、実際の治療方針は必ず処方元の医師・薬剤師の
+        指示に従ってください。
+      </div>
+      <p>
+        本アプリの利用によって生じたいかなる不利益についても、開発者は責任を負いません（詳細は
+        <a href="terms.html#disclaimer">利用規約の免責事項</a>をご参照ください）。
+      </p>
+    </section>
+
+    <section id="data-collected">
+      <h2>3. 取得する情報</h2>
+      <p>本アプリは、ご利用にあたり以下の情報をお使いの端末上に記録します。</p>
+      <table>
+        <tr><th>分類</th><td>身長・体重・目標体重・BMI</td></tr>
+        <tr><th></th><td>薬剤プラン（薬剤名・剤形・用量・投与スケジュール・月額費用・残薬数）</td></tr>
+        <tr><th></th><td>投与・服薬の記録（日時・部位・スキップ理由・メモ）</td></tr>
+        <tr><th></th><td>副作用の記録（種類・強さ・期間・メモ）</td></tr>
+        <tr><th></th><td>食事（たんぱく質量）・水分摂取量の記録</td></tr>
+        <tr><th></th><td>費用の記録（薬代・診察料・送料など）</td></tr>
+        <tr><th></th><td>受診予定・医師への申告状況（禁忌・既往に関するチェック）</td></tr>
+        <tr><th></th><td>任意でご利用いただくヘルスケア（HealthKit）連携時の体重・たんぱく質・水分・歩数</td></tr>
+      </table>
+      <p>
+        これらの情報は、いずれもお客様ご自身が入力・記録するものであり、本アプリはサインイン（アカウント登録）を
+        必要としません。氏名・住所・電話番号等、お客様を直接特定する情報の入力を求めることもありません。
+      </p>
+    </section>
+
+    <section id="storage">
+      <h2>4. 保存先と管理方法</h2>
+      <p>
+        本アプリが記録する情報は、次の2か所にのみ保存されます。
+      </p>
+      <ul>
+        <li>お使いのiPhone・iPad本体（アプリ専用の保護された領域）</li>
+        <li>お客様ご自身のiCloudアカウント内、Apple社が提供するCloudKitの「プライベートデータベース」
+          （端末間の同期・バックアップ目的。お客様のApple IDに紐づき、開発者を含む第三者はアクセスできません）</li>
+      </ul>
+      <p>
+        <strong>開発者が運用するサーバーに、お客様の記録データが保存されることはありません。</strong>
+        開発者はデータベースを保有せず、お客様の記録内容を閲覧・取得する手段を持ちません。
+      </p>
+    </section>
+
+    <section id="healthkit">
+      <h2>5. ヘルスケアデータの取り扱い</h2>
+      <p>
+        本アプリは、任意で Apple ヘルスケア（HealthKit）と連携できます。連携を許可しない場合でも、
+        すべての機能をご利用いただけます。
+      </p>
+      <ul>
+        <li>読み取り: 体重・身長・体脂肪率・ウエスト・たんぱく質摂取量・水分摂取量・歩数</li>
+        <li>書き込み: お客様が本アプリ内で入力・確認した体重・たんぱく質・水分の値のみ</li>
+      </ul>
+      <div class="note">
+        HealthKit経由で取得した情報を、広告配信や第三者へのデータ提供、本アプリの目的以外のマーケティング分析
+        に利用することはありません。お客様のiCloud以外の外部サーバーに送信することもありません。
+      </div>
+    </section>
+
+    <section id="server">
+      <h2>6. サーバーへの送信について</h2>
+      <p>
+        現在の本アプリは、記録データを外部サーバーへ送信する機能を持ちません。将来、写真からの栄養価推定や
+        文章要約など、端末内で処理しきれない機能をクラウド上のAIサービスを介して提供する場合は、
+        次の条件をすべて満たしたうえで実施します。
+      </p>
+      <ul>
+        <li>氏名・端末識別子などお客様を特定しうる情報を除去してから送信すること</li>
+        <li>送信するのは機能の実行に必要な最小限のデータ（例: 食事の写真1枚、要約対象の数値）に限ること</li>
+        <li>送信先はGoogle Cloud上の開発者管理サーバーに限り、第三者へ転売・提供しないこと</li>
+        <li>送信内容の本文（画像・数値そのもの）をログとして保存しないこと</li>
+      </ul>
+      <p>この機能を提供する際は、本ポリシーを改定し、アプリ内でお知らせします。</p>
+    </section>
+
+    <section id="analytics">
+      <h2>7. 分析データについて</h2>
+      <p>
+        本アプリの品質改善を目的として、画面の表示回数や機能の利用回数など、
+        <strong>健康データを一切含まない匿名の使用状況データ</strong>を分析目的で送信する場合があります。
+        体重・薬剤名・副作用の内容といった記録内容そのものが送信されることはありません。
+        このデータは特定の個人と紐づけて利用されません。
+      </p>
+    </section>
+
+    <section id="billing">
+      <h2>8. 課金情報の取り扱い</h2>
+      <p>
+        Pro機能のご購入は、すべてApple社の提供するApp内課金（StoreKit）を通じて処理されます。
+        クレジットカード番号などのお支払い情報は Apple社が管理しており、開発者が取得・保存することはありません。
+      </p>
+    </section>
+
+    <section id="third-party">
+      <h2>9. 第三者提供</h2>
+      <p>
+        法令に基づく場合を除き、お客様の記録データを本人の同意なく第三者に提供することはありません。
+        本アプリは広告を表示せず、広告事業者へのデータ提供も行いません。
+      </p>
+    </section>
+
+    <section id="tracking">
+      <h2>10. Cookie等のトラッキング技術</h2>
+      <p>
+        本アプリはWebサイトではないため、Cookieを使用しません。また、広告を目的とした端末の追跡（ATT：
+        App Tracking Transparency の対象となるトラッキング）も行いません。
+      </p>
+    </section>
+
+    <section id="children">
+      <h2>11. お子様の利用について</h2>
+      <p>
+        本アプリは18歳以上の方を対象としています。18歳未満の方による利用は想定しておらず、
+        初回のご利用登録時に年齢確認を行います。
+      </p>
+    </section>
+
+    <section id="deletion">
+      <h2>12. データの削除</h2>
+      <p>
+        アプリ内の「設定」からいつでもすべての記録データを削除できます。削除操作を行うと、
+        端末内のデータに加え、iCloud（CloudKit）上の対応するレコードも削除されます。
+        削除後は初回利用時と同じ状態（オンボーディング）からのご利用となります。
+      </p>
+    </section>
+
+    <section id="requests">
+      <h2>13. 開示・訂正・利用停止の請求</h2>
+      <p>
+        本アプリはサインインを必要とせず、開発者側にデータベースを保有しないため、開発者に対して
+        特定のお客様のデータの開示・訂正・削除を請求いただく必要はありません。お客様ご自身の端末・iCloud上の
+        データは、アプリ内の操作またはiOSの「設定」アプリからいつでも直接確認・削除いただけます。
+      </p>
+    </section>
+
+    <section id="changes">
+      <h2>14. ポリシーの変更</h2>
+      <p>
+        本ポリシーの内容は、法令の改正やサービス内容の変更に応じて改定することがあります。
+        重要な変更を行う場合は、本ページの更新に加え、アプリ内でお知らせします。
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>15. お問い合わせ</h2>
+      <p>
+        本ポリシーに関するお問い合わせは、<a href="support.html">お問い合わせページ</a>よりご連絡ください。
+      </p>
+    </section>
+  </article>
+</div>
+</main>
+
+<footer class="site-footer">
+  <span>&copy; 2026 Dosely</span>
+  <a href="/dosely/">トップページへ戻る</a>
+</footer>
+</body>
+</html>
