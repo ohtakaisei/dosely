@@ -256,11 +256,15 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 
 @media (max-width: 56rem) {
   .doc-shell { grid-template-columns: 1fr; }
+  .doc-toc { position: static; margin-bottom: 2rem; }
 }
 
 .doc-toc {
   position: sticky;
   top: 1.5rem;
+  align-self: start;
+  max-height: calc(100vh - 3rem);
+  overflow-y: auto;
   font-size: 0.86rem;
 }
 
