@@ -256,7 +256,6 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 
 @media (max-width: 56rem) {
   .doc-shell { grid-template-columns: 1fr; }
-  .doc-toc { position: static; margin-bottom: 2rem; }
 }
 
 .doc-toc {
@@ -266,6 +265,18 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   max-height: calc(100vh - 3rem);
   overflow-y: auto;
   font-size: 0.86rem;
+}
+
+/* この宣言は上の無条件 .doc-toc ルールより後に置くこと。
+   同じ詳細度のセレクタはソース順で決まるため、先に置くと
+   sticky指定に上書きされて狭い画面での重なりが再発する。 */
+@media (max-width: 56rem) {
+  .doc-toc {
+    position: static;
+    max-height: none;
+    overflow-y: visible;
+    margin-bottom: 2rem;
+  }
 }
 
 .doc-toc .toc-label {
